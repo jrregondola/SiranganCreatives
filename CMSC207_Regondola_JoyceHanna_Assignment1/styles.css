@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.logo img {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.logo {
+  background: black;
+  width: 100%;
+  overflow: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 0 150px;
+  list-style: none;
+}
+
+li {
+  float: right;
+}
+
+nav a {
+  width: 100px;
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Helvetica;
+  color: orange;
+  text-align: center;
+}
+
+nav a:hover {
+  color: black;
+  background: orange;
+  transition: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 100%;
+  font-family: Helvetica;
+}
+
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  float: left;
+  height: 100vh;
+  color: orange;
+  background-color: transparent;
+}
+
+.services-header {
+  position: center;
+  text-align: left;
+  font-size: x-large;
+  font-family: Helvetica, sans-serif;
+}
+
+.content-logo img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+#about {
+  color: orange;
+  text-align: center;
+  position: relative;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: transparent;
+  z-index: 1;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.about-content img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-content h1 {
+  font-size: 4rem;
+  background-color: transparent;
+  background-image: linear-gradient(to top, pink 0%, orange 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#services {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#services h1 {
+  font-size: 4rem;
+  background-color: transparent;
+  background-image: linear-gradient(to top, pink 0%, orange 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  background-color: transparent;
+  background-image: linear-gradient(-20deg, pink 0%, orange 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services-content {
+  margin: 1rem;
+  height: 525px;
+  width: 400px;
+  border-radius: 5px;
+  background-image: url("/images/photography.png");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.services-content:before {
+  opacity: 0.2;
+}
+
+.services-content:nth-child(2) {
+  background-image: url("/images/videography.png");
+  max-width: 100%;
+  height: auto;
+}
+
+.services-content:nth-child(3) {
+  background-image: url("/images/graphics.png");
+  max-width: 100%;
+  height: auto;
+}
+
+.services-content:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+#gallery {
+  background-color: transparent;
+}
+
+#gallery h1 {
+  font-size: 4rem;
+  background-color: black;
+  background-image: linear-gradient(to top, pink 0%, orange 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.gallery-container {
+  max-width: 50%;
+  height: auto;
+  position: relative;
+  margin: 0px auto;
+  position: center;
+}
+
+.numbertext {
+  color: orange;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  align-items: center;
+}
+
+.active,
+.dot:hover {
+  background-color: gray;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#contact {
+  background-color: transparent;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 4rem;
+  background-color: transparent;
+  background-image: linear-gradient(to top, pink 0%, orange 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+  margin-left: 20px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  background-color: transparent;
+  background-image: linear-gradient(-20deg, pink 0%, orange 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-container:hover {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
